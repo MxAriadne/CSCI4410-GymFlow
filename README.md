@@ -13,6 +13,17 @@
 Description: Create a fitness platform where users can create, share, and follow customizable workout plans.  Use HTML, CSS, and JavaScript for the Frontend, PHP for the back-end, and a machine learning library like TensorFlow.js to generate personalized workout recommendations.
 
 
+**Requirements:**
+
+* **Front End**: HTML/CSS, JavaScript/jQuery
+* **Back End**: Server/PHP, MySQL/Database
+* **Final Report**(Maximum 5 pages, Minimum 2 pages)
+  * Project Description
+  * Project Design Diagram Graph
+  * Team Member Task Distribution
+* **Final Presentation**
+  * ☆ Each Team has **10 minutes** for demonstration.
+* Your website should have at least one feature **was not taught** in the class.
 
 # Roles
 
