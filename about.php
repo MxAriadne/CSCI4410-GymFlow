@@ -19,6 +19,7 @@
             </div>
             <a href="schedule.php">Schedule</a>
             <a href="about.php">About Us</a>
+            <a href="account.php">My Account</a>
         </div>
 
         <h1><b>All About GymFlow</b></h1>

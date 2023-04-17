@@ -27,6 +27,22 @@
 
 <body>
 
+<div class="navbar">
+    <a href="index.php">Homepage</a>
+    <div class="dropdown">
+        <button class="dropbtn">Services
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="workoutcustomizer.php">Workout Customizer</a>
+            <a href="caloriccounter.php">Calorie Tracker</a>
+        </div>
+    </div>
+    <a href="schedule.php">Schedule</a>
+    <a href="about.php">About Us</a>
+    <a href="account.php">My Account</a>
+</div>
+
 <h1>Hello, <?php echo $_SESSION["user"] ?>.</h1>
 
 <button><a href="?logout">Logout</a></button>

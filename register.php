@@ -30,13 +30,14 @@
     </div>
     <a href="schedule.php">Schedule</a>
     <a href="about.php">About Us</a>
+    <a href="account.php">My Account</a>
 </div>
 
 <img src="GymFlow_Logo.png" alt="Gym Flow logo" width="600px" height="400px">
 <br>
 
 <div class="login">
-    <h1>Login</h1>
+    <h1>Register</h1>
     <p class="error"><?php echo @$response; ?></p>
     <form action="" method="post">
         <label for="email">

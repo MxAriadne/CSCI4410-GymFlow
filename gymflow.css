@@ -174,3 +174,7 @@ img {
 	background-color: #025577;;
   	transition: background-color 0.2s;
 }
+
+.error {
+    color: red;
+}

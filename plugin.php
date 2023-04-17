@@ -14,11 +14,11 @@ session_start();
 //Store server IP.
 define('SERVER', 'localhost');
 //Store database username.
-define('USERNAME', '');
+define('USERNAME', 'gymflow');
 //Store database password.
-define('PASSWORD', '');
+define('PASSWORD', 'GymTester12');
 //Store database name.
-define('DATABASE', '');
+define('DATABASE', 'gym');
 
 /*
  * consoleLog
@@ -43,7 +43,7 @@ function consoleLog($output, $forward = true)
 function sqlConnect()
 {
     // New SQL connection.
-    $mysqli = new mysqli(SERVER, USERNAME, PASSWORD, DATABASE);
+    $mysqli = new \MySQLi(SERVER, USERNAME, PASSWORD, DATABASE);
     // If connection succeeds...
     if ($mysqli -> connect_errno == 0) {
         // Set charset and return $mysqli
@@ -66,11 +66,14 @@ function sqlConnect()
  */
 function userValidation($value, $mysqli, $id)
 {
-    $stmt = $mysqli -> prepare("SELECT " . $id ." FROM users WHERE email = ?");
+    // SQL to pull the asked for record.
+    $stmt = $mysqli -> prepare("SELECT " . $id ." FROM users WHERE " . $id . " = ?");
     $stmt -> bind_param("s", $value);
     $stmt -> execute();
     $result = $stmt -> get_result();
+    // Save associative array in $data
     $data = $result -> fetch_assoc();
+    // Make sure the array isn't null
     if ($data != null) {
         return 0;
     }
@@ -130,7 +133,9 @@ function registerUser($email, $username, $password, $confirmPassword)
     if ($stmt -> affected_rows != 1) {
         return "An error occurred. Please try again :c";
     } else {
-        return "Success!";
+        // Redirect to homepage
+        header("location: index.php");
+        exit();
     }
 }
 
@@ -210,8 +215,6 @@ function deleteAccount()
         session_destroy();
         // Redirect to homepage
         header("location: index.php");
-        // Alert user success
-        echo '<script>alert("Your account has been deleted.")</script>';
         exit();
     }
 }
