@@ -1,12 +1,22 @@
+<?php
+  require "plugin.php";
+  if (isset($_POST['submit'])) {
+    $response = loginUser($_POST['username'], $_POST['password']);
+  }
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link type="text/css" rel="stylesheet" href="gymflow.css" />
     <title>GymFlow</title>
   </head>
+
   <body>
+
     <div class="navbar">
       <a href="index.php">Homepage</a>
       <div class="dropdown">
@@ -16,7 +26,6 @@
         <div class="dropdown-content">
           <a href="workoutcustomizer.php">Workout Customizer</a>
           <a href="caloriccounter.php">Workout Caloric Counter</a>
-          <a href="#">Link 3</a>
         </div>
       </div> 
       <a href="schedule.php">Schedule</a>
@@ -28,7 +37,8 @@
     
     <div class="login">
       <h1>Login</h1>
-      <form action="authenticate.php" method="post">
+      <p class="error"><?php echo @$response; ?></p>
+      <form action="" method="post">
         <label for="username">
           <i class="fas fa-user"></i>
         </label>
@@ -37,12 +47,15 @@
           <i class="fas fa-lock"></i>
         </label>
         <input type="password" name="password" placeholder="Password" id="password" required>
-        <input type="submit" value="Login">
+        <br><a href="register.php">Don't have an account? Register here!</a>
+        <input type="submit" name="submit" value="Login">
       </form>
     </div>
-    
+
     <footer>
       <h5>© 2023 GymFlow</h5>
     </footer>
+
   </body>
+
 </html>
