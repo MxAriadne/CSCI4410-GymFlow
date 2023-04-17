@@ -22,7 +22,7 @@ Description: Create a fitness platform where users can create, share, and follow
   * Project Design Diagram Graph
   * Team Member Task Distribution
 * **Final Presentation**
-  * ☆ Each Team has **10 minutes** for demonstration.
+  * Each Team has **10 minutes** for demonstration.
 * Your website should have at least one feature **was not taught** in the class.
 
 # Roles
