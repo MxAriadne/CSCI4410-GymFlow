@@ -1060,160 +1060,97 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="298" parent="288" name="calories">
+    <table id="298" parent="288" name="meal_list">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="299" parent="288" name="calories_meal">
+    <table id="299" parent="288" name="users">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="300" parent="288" name="meal">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="301" parent="288" name="users">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <column id="302" parent="298" name="CALORIES_ID">
+    <column id="300" parent="298" name="ID">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="303" parent="298" name="MEAL_ID">
-      <DasType>int|0s</DasType>
+    <column id="301" parent="298" name="ITEM">
+      <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="304" parent="298" name="USERNAME">
-      <DasType>varchar(32)|0s</DasType>
+    <column id="302" parent="298" name="CALORIES">
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="305" parent="298" name="DATE">
-      <DasType>date|0s</DasType>
+    <column id="303" parent="298" name="USERNAME">
+      <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="306" parent="298" name="calories_ibfk_2">
-      <ColNames>MEAL_ID</ColNames>
-      <RefColNames>MEAL_ID</RefColNames>
-      <RefTableName>meal</RefTableName>
-    </foreign-key>
-    <foreign-key id="307" parent="298" name="calories_ibfk_1">
+    <column id="304" parent="298" name="DATE">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="305" parent="298" name="meal_list_ibfk_1">
       <ColNames>USERNAME</ColNames>
       <RefColNames>USERNAME</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <index id="308" parent="298" name="PRIMARY">
-      <ColNames>CALORIES_ID</ColNames>
+    <index id="306" parent="298" name="PRIMARY">
+      <ColNames>ID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="309" parent="298" name="MEAL_ID">
-      <ColNames>MEAL_ID</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="310" parent="298" name="USERNAME">
+    <index id="307" parent="298" name="USERNAME">
       <ColNames>USERNAME</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="311" parent="298" name="PRIMARY">
+    <key id="308" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="312" parent="299" name="CALORIES_ID">
-      <DasType>int|0s</DasType>
-      <Position>1</Position>
-    </column>
-    <column id="313" parent="299" name="MEAL_ID">
-      <DasType>int|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <foreign-key id="314" parent="299" name="calories_meal_ibfk_1">
-      <ColNames>CALORIES_ID</ColNames>
-      <RefColNames>CALORIES_ID</RefColNames>
-      <RefTableName>calories</RefTableName>
-    </foreign-key>
-    <foreign-key id="315" parent="299" name="calories_meal_ibfk_2">
-      <ColNames>MEAL_ID</ColNames>
-      <RefColNames>MEAL_ID</RefColNames>
-      <RefTableName>meal</RefTableName>
-    </foreign-key>
-    <index id="316" parent="299" name="CALORIES_ID">
-      <ColNames>CALORIES_ID</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="317" parent="299" name="MEAL_ID">
-      <ColNames>MEAL_ID</ColNames>
-      <Type>btree</Type>
-    </index>
-    <column id="318" parent="300" name="MEAL_ID">
-      <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="319" parent="300" name="ITEM">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="320" parent="300" name="CALORIES">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <index id="321" parent="300" name="PRIMARY">
-      <ColNames>MEAL_ID</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="322" parent="300" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="323" parent="301" name="USERNAME">
+    <column id="309" parent="299" name="USERNAME">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="324" parent="301" name="EMAIL">
+    <column id="310" parent="299" name="EMAIL">
       <DasType>varchar(319)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="325" parent="301" name="PASSWORD">
+    <column id="311" parent="299" name="PASSWORD">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="326" parent="301" name="PRIMARY">
+    <index id="312" parent="299" name="PRIMARY">
       <ColNames>USERNAME</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="327" parent="301" name="USERNAME">
+    <index id="313" parent="299" name="USERNAME">
       <ColNames>USERNAME</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="328" parent="301" name="EMAIL">
+    <index id="314" parent="299" name="EMAIL">
       <ColNames>EMAIL</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="329" parent="301" name="PRIMARY">
+    <key id="315" parent="299" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="330" parent="301" name="USERNAME">
+    <key id="316" parent="299" name="USERNAME">
       <UnderlyingIndexName>USERNAME</UnderlyingIndexName>
     </key>
-    <key id="331" parent="301" name="EMAIL">
+    <key id="317" parent="299" name="EMAIL">
       <UnderlyingIndexName>EMAIL</UnderlyingIndexName>
     </key>
   </database-model>
