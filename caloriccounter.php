@@ -21,6 +21,13 @@
         addMeal($_POST['item'], $_POST['cal'], $_SESSION['user'], $_SESSION['date']);
         // Return to result if needed for viewing.
         $result = "Successfully saved!";
+
+        // Store the submitted data in the session
+        $_SESSION['food_data'][] = [
+        'food' => $_POST['item'],
+        'calories' => $_POST['cal'],
+        'date' => $_SESSION['date']
+        ];
     }
     // If the user sends a GET request using the previous button...
     if (isset($_GET['previous'])) {
@@ -164,7 +171,6 @@
         <a href="?next=true">
             <input type="button" name="next" value="Next ->">
         </a>
-    </div>
 
     <h5>© 2023 GymFlow</h5>
 </body>

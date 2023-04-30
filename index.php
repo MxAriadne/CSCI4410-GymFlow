@@ -36,6 +36,13 @@
     <img src="GymFlow_Logo.png" alt="Gym Flow logo" width="600px" height="400px">
     <br>
     
+    <?php if (isset($_SESSION['user'])) { ?>
+    <div class="welcome-message">
+      <h1>Welcome, <?php echo $_SESSION['user']; ?>!</h1>
+      <h2 style="text-align: center; text-decoration: underline;">Current date and time:</h2>
+      <p><?php date_default_timezone_set("America/Chicago"); echo date('l, F jS Y - h:i A'); ?></p>
+    </div>
+    <?php } else { ?>
     <div class="login">
       <h1>Login</h1>
       <p class="error"><?php echo @$response; ?></p>
@@ -52,6 +59,7 @@
         <input type="submit" name="submit" value="Login">
       </form>
     </div>
+    <?php } ?>
 
     <footer>
       <h5>© 2023 GymFlow</h5>

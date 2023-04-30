@@ -7,13 +7,14 @@
     </head>
     <body>
         <div class="navbar">
+           <img src="GymFlow_Logo.png" alt="Gym Flow logo">
             <a href="index.php">Homepage</a>
             <div class="dropdown">
                 <button class="dropbtn">Services
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="workoutcustomizer.php">Workout Customizer</a>
+                    <a href="workoutcustomizer.php">Workout Planner</a>
                     <a href="caloriccounter.php">Workout Caloric Counter</a>
                 </div>
             </div>
@@ -22,12 +23,18 @@
             <a href="account.php">My Account</a>
         </div>
 
-        <h1><b>All About GymFlow</b></h1>
-            <p><b>We are students at Middle Tennessee State University who teamed up to create and build GymFlow. We initially started with an idea to create a personalized and customizable workout website to facilitate the intimidation that can come with exercise. And so, GymFlow was born!</b></p>
+      <div class="aboutpage">
+        <h1 id="aboutgym">Discover GymFlow</h1>
+            <p id="about1">GymFlow is the brainchild of a group of dedicated Middle Tennessee State University students who share a passion for fitness and well-being. Our mission is to provide a user-friendly platform that helps individuals overcome the intimidation often associated with exercise and make informed decisions about their workout routines.</p>
             <br>
-            <p><b>Have you ever wondered what types of workouts you need to do? Or what exercises you should do at the gym to reach your goals? Well, GymFlow is your answer!</b></p>
+            <h2 id="whatwedo" style="text-align: center; text-decoration: underline;">What We Do</h2>
+            <p id="about2">GymFlow offers a comprehensive suite of tools to help you create a fully personalized workout regimen, no matter your fitness level or experience. We understand that navigating the world of exercise can be overwhelming, which is why our platform is designed to guide you in developing a routine that is tailored to your unique needs and goals.</p>
             <br>
-            <p><b>We have spent weeks building GymFlow together, to ensure that it is a tool for anyone to utilize for their specific exercise needs. Whether you are a beginner, a bodybuilder, an athlete, or a homebody, GymFlow has a workout regimen perfectly curated just for you and your lifestyle. </b></p>
+            <p id="about3">Our team has invested countless hours in creating GymFlow to ensure it caters to a wide range of users, from beginners and homebodies to bodybuilders and athletes. We're confident that GymFlow will empower you to take control of your fitness journey and lead a healthier, happier life.</p>
+
+        <img id="aboutpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Middle_Tennessee_MT_Logomark.svg/1200px-Middle_Tennessee_MT_Logomark.svg.png" alt="Fitness Image">
+
         <h5>© 2023 GymFlow</h5>
+      </div>
     </body>
 </html>

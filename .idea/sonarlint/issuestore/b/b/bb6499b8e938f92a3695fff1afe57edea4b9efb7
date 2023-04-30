@@ -1,0 +1,4 @@
+
+a	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(®’Öÿÿÿÿÿ8æª‘ù0
+G	php:S2003"&Replace "require" with "require_once".(©¢˜Îûÿÿÿÿ8æª‘ù0
+m	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(©¢˜Îûÿÿÿÿ8æª‘ù0
