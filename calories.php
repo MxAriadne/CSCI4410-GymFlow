@@ -12,6 +12,31 @@ require "plugin.php";
 // we need to be able to retrieve their username from session_id
 $user = $_SESSION['user'];
 
+function retrieveCalorieSum($date) {
+    $output = retrieveCalories($date);
+    $sum = 0;
+        // Validate the output
+        if ($output != null) {
+            // $output is n associative array, therefore each value in this foreach loop
+            // is an array of the rows that were pulled from the database.
+            foreach ($output as $innerArray) {
+                // This verifies that $innerArray, which represents a single row, is valid.
+                if (is_array($innerArray)) {
+                    // This iterates through the provided row.
+                    foreach ($innerArray as $value) {
+                        // If $value is an int, which only occurs when $value = calories, then
+                        // we add them to sum.
+                        if (is_int($value)) {
+                            // Add the value to the sum
+                            $sum += $value;
+                        }
+                    }
+                }
+            }
+        }
+        return $sum;
+}
+
 function retrieveCalories($date)
 {
     $mysqli = sqlConnect();
