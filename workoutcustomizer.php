@@ -125,9 +125,7 @@
         <p><?php echo $result; ?></p>
     </form>
 
-<<<<<<< Updated upstream
     <h5>© 2023 GymFlow</h5>
-=======
   <style>
   form {
     max-width: 500px;
@@ -183,7 +181,7 @@
 </style>
 
 
-  <br> <br> <br>   <br> <br> <br>   <br> <br> <br>
+<br><br><br><br><br><br><br><br><br>
     
     <div class="contact-info">   
        <h1 id = "contactinfo"> Contact </h1>
@@ -225,6 +223,5 @@
       }
     </style>
 
->>>>>>> Stashed changes
 </body>
 </html>
