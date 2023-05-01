@@ -1,14 +1,14 @@
-# GymFlow
+M# GymFlow
 
 
 
 **Members:**
 
 * Sanjog Nepal         (Project Leader)
-* Luwi Ogbaide         ()
+* Luwi Ogbaide         (Machine Learning Engineer)
 * Freyja Richardson    (Backend Developer)
-* Vivian Aboulmouna    (Machine Learning Engineer)
-* Kennedy Bowles       ()
+* Vivian Aboulmouna    (Front-End Developer)
+* Kennedy Bowles       (Front-End Developer)
 
 Description: Create a fitness platform where users can create, share, and follow customizable workout plans.  Use HTML, CSS, and JavaScript for the Frontend, PHP for the back-end, and a machine learning library like TensorFlow.js to generate personalized workout recommendations.
 
@@ -28,6 +28,8 @@ Description: Create a fitness platform where users can create, share, and follow
 # Roles
 
 #### Frontend Developer:
+Kennedy Bowles
+Vivian Aboulmouna
 
 This person will be responsible for building the user interface and user experience. They'll use HTML, CSS, and JavaScript to create responsive and visually appealing layouts, as well as ensure that the website is user-friendly and accessible.
 
@@ -36,6 +38,10 @@ Tasks:
 * Design and implement the website layout and components.
 * Create responsive and mobile-friendly designs.
 * Optimize the UI for usability and accessibility.
+* 
+Vivian Aboulmouna - Helped with functionality of navigation bar and drop-down menu. Created and wrote About Us tab. Created the logo for the website.
+ 
+Kennedy Bowles - Helped create the navigation bar. Helped design the overall look of the website. Created the main tabs for the navigation bar which were Homepage, schedule, services, and about us. Will add more to the design by adding more pictures and making the website look better.
 
 #### Backend Developer:
 
@@ -61,12 +67,13 @@ Tasks:
 
 #### Machine Learning Engineer:
 
-###### Vivian Aboulmouna
+###### Luwi Ogbaide 
 
 This team member will be responsible for developing the personalized workout recommendation system. They'll use a machine learning library like TensorFlow.js to train a model for generating custom workout plans based on user preferences, goals, and fitness levels.
 
 Tasks:
-
+* Gathered data for fitness neural network
+* Cleaned the data and started building the neural network.
 * Develop a machine learning model for workout recommendation.
 * Collect and preprocess training data.
 * Integrate the trained model with the backend API.
