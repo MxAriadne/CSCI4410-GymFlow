@@ -33,12 +33,17 @@
       <a href="about.php">About Us</a>
       <a href="account.php">My Account</a>
     </div>
-
+	
+    <img src="GymFlow_Logo.png" alt="Gym Flow logo" width="600px" height="400px">
+=======
      <div class="image-container">
        <img src = "gymimg16.jpg" alt= "Gym image 16">
        <img src="GymFlow_Logo.png" alt="Gym Flow logo">
        <img src = "gymimg17.jpeg" alt = "Gym image 17">
      </div>
+    
+<br><br><br>
+<p style= "color: #454545; font-size: 30px;">Sweat now, shine later: Get ready to see the results of your hard work pay off.</p>
 
   <style>
     .image-container{
@@ -54,13 +59,19 @@
  </style>
     
     
-    <br>  <br>  <br>    <br>  <br>  <br>
+<br><br><br><br><br><br>
     
     <div class="image-wrapper">
       <img src="gymimg7.jpg" alt= "Gym image 7">
       <p id = "gympar">Transform your fitness journey with our custom workout builder. Our state-of-the-art platform allows you to create a personalized workout plan tailored to your goals, preferences, and fitness level. Say goodbye to generic workouts and hello to a workout experience that is uniquely yours. Start building your perfect workout today!</p>
    </div>
 
+    <script>
+    $(document).ready(function() {
+    $(".image-wrapper").hide().fadeIn(2000); // Fades in the image over 2 seconds (2000 milliseconds)
+    });
+    </script>
+	
     <style>
       .image-wrapper{
          background: #025577;
@@ -74,7 +85,6 @@
      }
     </style>
     
-    <br>
     <br>
 
     <p style= "color: #454545; font-size: 30px;">Join us and take the first step towards a healthier, happier you!</p>
@@ -98,16 +108,7 @@
           <i class="fas fa-lock"></i>
         </label>
         <input type="password" name="password" placeholder="Password" id="password" required>
-        <style>
-         .register-link {
-               color: white;
-               text-decoration: none;
-          }
-        .register-link:hover {
-             text-decoration: underline;
-          }
-       </style>
-        <br><a href="register.php" class= "register-link">Don't have an account? Register here!</a>
+		<br><a href="register.php">Don't have an account? Register here!</a>
         <input type="submit" name="submit" value="Login">
       </form>
     </div>
@@ -117,6 +118,12 @@
       <p id = "contactpar">We would love to hear from you! Whether you have questions, comments, or just want to say hello, our team is here to help. You can contact us by phone or email, and we'll get back to you as soon as possible. We are dedicated to providing the best possible experience for our members and are always looking for ways to improve. Don't hesitate to reach out and let us know how we can assist you on your fitness journey!</p>  
    <img id = "img14" src="gymimg14.jpg" alt= "Gym image 14">
 </div>
+
+<script>
+    $(document).ready(function() {
+	$("#container").hide().fadeIn(2000); // Fades in the image over 2 seconds (2000 milliseconds)
+	});
+</script>
 
     <style>
       .container {
@@ -135,8 +142,7 @@
      }
     </style>
     
-    <br> <br> <br>  <br> <br> <br>  <br> <br> <br>
-
+<br><br><br><br><br><br><br><br><br>
     
     <div class="contact-info">   
        <h1 id = "contactinfo"> Contact </h1>
@@ -178,8 +184,6 @@
       }
     </style>
 
-    
-    
   </body>
 
 </html>

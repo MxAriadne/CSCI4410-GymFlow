@@ -37,6 +37,13 @@ if (isset($_POST['submit'])) if ($_POST['item'] != null && $_POST['cal'] != null
     addMeal($_POST['item'], $_POST['cal'], $_SESSION['user'], $_SESSION['date']);
     // Return to result if needed for viewing.
     $result = "Successfully saved!";
+    
+    // Store the submitted data in the session
+    $_SESSION['food_data'][] = [
+    'food' => $_POST['item'],
+    'calories' => $_POST['cal'],
+    'date' => $_SESSION['date']
+    ];
 }
 // If the user sends a GET request using the previous button...
 if (isset($_GET['previous'])) {
@@ -116,6 +123,30 @@ if (isset($_GET['reset'])) {
     <a href="about.php">About Us</a>
     <a href="account.php">My Account</a>
 </div>
+
+<div class="calcon">
+    <p id = "contactpar">Keep track of your daily calorie intake and achieve your fitness goals with our easy-to-use calorie tracking feature.</p>  
+	<img id = "img19" src="gymimg19.jpg" alt= "Gym image 19">
+</div>
+
+<style>
+    .calcon {
+        background: #025577;
+        color: #FFF;
+        overflow: hidden;
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+    }
+
+    #img19{
+        width:400px;
+        height: auto;
+        margin-left: 90px;
+    }
+</style>
+
+<br><br><br><br>
 
 <h2>Showing caloric intake for <?php echo $_SESSION['date']; ?></h2>
 
@@ -210,39 +241,79 @@ if (isset($_GET['reset'])) {
 <a href="?next=true">
     <input type="button" name="next" value="Next ->">
 </a>
-</div>
+
+<h5>© 2023 GymFlow</h5>
 
 <style>
+    button[name="reset"] {
+     background-color: #025577;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     font-size: 16px;
+     font-weight: bold;
+  }
+
+  button[name="reset"]:hover {
+    cursor: pointer;
+    background-color: #003f5c;
+  }
     form {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        width: 300px;
-        border: 5px solid #025577;
+      background-color: white;
+      padding: 20px;
+      width:300px;
+      border-radius: 10px;
+      border: 5px solid #025577;
+      margin: 0 auto;
+      margin-top: 50px;
     }
+    
 
     input[type="text"], input[type="submit"] {
-        padding: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        border-radius: 5px;
-        border: 2px solid #025577;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%; 
+      border-radius: 5px;
+      border: 2px solid #025577;
     }
 
-    input[type="submit"] {
+   input[type="submit"] {
+      background-color: #025577;
+      color: white;
+      font-weight: bold;
+   }
+
+  p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  } 
+    
+     a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    input[type="button"] {
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        color: #025577;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[type="button"]:hover {
         background-color: #025577;
         color: white;
-        font-weight: bold;
     }
+  </style>
 
-    p {
-        color: white;
-        font-weight: bold;
-        text-align: center;
-    }
-</style>
-
-<br> <br> <br> <br>
+<br><br><br><br>
 
 <div class="calcon">
     <p id = "contactpar">Keep track of your daily calorie intake and achieve your fitness goals with our easy-to-use calorie tracking feature.</p>
@@ -266,9 +337,7 @@ if (isset($_GET['reset'])) {
     }
 </style>
 
-
-<br> <br> <br>  <br> <br> <br>  <br> <br> <br>
-
+<br><br><br><br><br><br><br><br><br>
 
 <div class="contact-info">
     <h1 id = "contactinfo"> Contact </h1>
@@ -309,7 +378,6 @@ if (isset($_GET['reset'])) {
         color:white;
     }
 </style>
-
 
 </body>
 </html>

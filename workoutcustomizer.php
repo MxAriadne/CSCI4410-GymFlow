@@ -1,5 +1,5 @@
 <?php
-    //require "workout.php";
+    require "workout.php";
 
     if (!isset($_SESSION['user'])) {
         header("location: index.php");
@@ -58,30 +58,6 @@
         <a href="about.php">About Us</a>
         <a href="account.php">My Account</a>
     </div>
-
-      <div class = "workoutcust">
-  <img src="gymimg11.jpg" alt= "Gym image 11" style = "float:right; top:0;">
-    <p id = "workcust"> Our workout customizer tool uses your personal information to create a customized fitness plan just for you. Enter your details now and start your fitness journey! </p>
-      </div>
-  <style>
-    .workoutcust{
-         background: #025577;
-         color: #FFF;
-         display:flex;
-         align-items: center;
-     }
-     .workoutcust img{
-        height: 100%;
-        width: 400px;
-     }
-    #workoutcust{
-        text-align:center;
-        font-size: 20px;
-        margin: 0;
-    }
-  </style>
-
-  <br> <br>
 
     <form action="" method="post">
         <label for="gender">Gender:</label>
@@ -149,7 +125,63 @@
         <p><?php echo $result; ?></p>
     </form>
 
-  <br> <br> <br>   <br> <br> <br>   <br> <br> <br>
+    <h5>© 2023 GymFlow</h5>
+  <style>
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #025577;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: #025577;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  form select,
+  form input[type="number"],
+  form textarea,
+  form input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+  }
+
+  form select:focus,
+  form input[type="number"]:focus,
+  form textarea:focus,
+  form input[type="text"]:focus {
+    outline: none;
+    background-color: #025577;
+  }
+
+  form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #025577;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #023959;
+  }
+</style>
+
+
+<br><br><br><br><br><br><br><br><br>
     
     <div class="contact-info">   
        <h1 id = "contactinfo"> Contact </h1>
