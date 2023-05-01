@@ -21,13 +21,6 @@
         addMeal($_POST['item'], $_POST['cal'], $_SESSION['user'], $_SESSION['date']);
         // Return to result if needed for viewing.
         $result = "Successfully saved!";
-
-        // Store the submitted data in the session
-        $_SESSION['food_data'][] = [
-        'food' => $_POST['item'],
-        'calories' => $_POST['cal'],
-        'date' => $_SESSION['date']
-        ];
     }
     // If the user sends a GET request using the previous button...
     if (isset($_GET['previous'])) {
@@ -171,7 +164,76 @@
         <a href="?next=true">
             <input type="button" name="next" value="Next ->">
         </a>
+    </div>
 
-    <h5>© 2023 GymFlow</h5>
+  <br> <br> <br> <br>
+
+   <div class="calcon">
+      <p id = "contactpar">Keep track of your daily calorie intake and achieve your fitness goals with our easy-to-use calorie tracking feature.</p>  
+   <img id = "img19" src="gymimg19.jpg" alt= "Gym image 19">
+</div>
+
+  <style>
+      .calcon {
+        background: #025577;
+        color: #FFF;
+        overflow: hidden;
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+      }
+
+      #img19{
+       width:400px;
+       height: auto;
+       margin-left: 90px;
+     }
+    </style>
+    
+
+   <br> <br> <br>  <br> <br> <br>  <br> <br> <br>
+
+    
+    <div class="contact-info">   
+       <h1 id = "contactinfo"> Contact </h1>
+      <p id ="ct">Our Address: MTSU</p>
+       
+     <p id = "ct">Email: gymflow@gmail.com</p>
+      
+     <p id = "ct">Phone: 615-375-1242</p>
+      <br> <br> <br>
+       <img src = "gymimg18.png" alt = "Gym image 18" width=7% height = 7%>
+       <footer>
+      <h5>© 2023 GymFlow</h5>
+    </footer>
+  </div>
+    
+    <style>
+      .contact-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+        background-color: #454545;
+        background-size:cover;
+        width: 100%;
+        height: 60%;
+      }
+
+      .contact-info p{
+        display: inline-block;
+        text-align:center;
+        margin: 0;
+        padding: 10px;
+      } 
+
+      #contactinfo {
+       margin-right: 20px;
+       font-size: 30px;
+       text-decoration: underline;
+       color:white;
+      }
+    </style>
+
+  
 </body>
 </html>

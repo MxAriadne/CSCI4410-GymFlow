@@ -59,6 +59,30 @@
         <a href="account.php">My Account</a>
     </div>
 
+      <div class = "workoutcust">
+  <img src="gymimg11.jpg" alt= "Gym image 11" style = "float:right; top:0;">
+    <p id = "workcust"> Our workout customizer tool uses your personal information to create a customized fitness plan just for you. Enter your details now and start your fitness journey! </p>
+      </div>
+  <style>
+    .workoutcust{
+         background: #025577;
+         color: #FFF;
+         display:flex;
+         align-items: center;
+     }
+     .workoutcust img{
+        height: 100%;
+        width: 400px;
+     }
+    #workoutcust{
+        text-align:center;
+        font-size: 20px;
+        margin: 0;
+    }
+  </style>
+
+  <br> <br>
+
     <form action="" method="post">
         <label for="gender">Gender:</label>
         <select name="gender" id="gender" required>
@@ -125,6 +149,47 @@
         <p><?php echo $result; ?></p>
     </form>
 
-    <h5>© 2023 GymFlow</h5>
+  <br> <br> <br>   <br> <br> <br>   <br> <br> <br>
+    
+    <div class="contact-info">   
+       <h1 id = "contactinfo"> Contact </h1>
+      <p id ="ct">Our Address: MTSU</p>
+       
+     <p id = "ct">Email: gymflow@gmail.com</p>
+      
+     <p id = "ct">Phone: 615-375-1242</p>
+      <br> <br> <br>
+       <img src = "gymimg18.png" alt = "Gym image 18" width=7% height = 7%>
+       <footer>
+      <h5>© 2023 GymFlow</h5>
+    </footer>
+  </div>
+    
+    <style>
+      .contact-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+        background-color: #454545;
+        background-size:cover;
+        width: 100%;
+        height: 60%;
+      }
+
+      .contact-info p{
+        display: inline-block;
+        text-align:center;
+        margin: 0;
+        padding: 10px;
+      } 
+
+      #contactinfo {
+       margin-right: 20px;
+       font-size: 30px;
+       text-decoration: underline;
+       color:white;
+      }
+    </style>
+
 </body>
 </html>

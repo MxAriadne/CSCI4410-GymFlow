@@ -8,9 +8,8 @@ body, html {
 h1 {
   font-size: 40px;
   text-align: center;
-  color: #025577;
+  color: #025577; 
   padding-top: 50px;
-
 }
 
 p {
@@ -29,12 +28,12 @@ p {
   height: 100%;
 }
 
-h5 {
+#footer{
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
+  left:0;
   width: 100%;
   text-align: center;
-  color: white;
 }
 
 .navbar {
@@ -65,7 +64,14 @@ h5 {
 .navbar a:hover {
   background-color: #025577;
 }
-
+.navbar img{
+ /* Adjust this value as needed */
+  width:50px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 0px;
+  padding-bottom: 45px;
+}
 /* Style the GymFlow logo */
 img {
   display: block;
@@ -73,6 +79,35 @@ img {
   padding-top: 50px;
   max-width: 100%;
   height: auto;
+}
+
+#img1{
+  top:20px;
+}
+
+
+#contact{
+  font-size: 20px;
+}
+
+#phrasegym{
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+
+#gympar{
+  text-align:center;
+  font-size: 20px;
+  margin: 0;
+  margin-right: 20px; 
+}
+
+
+#contactpar{
+  text-align:center;
+  font-size: 20px;
+  margin: 0;
 }
 
 .dropbtn {
@@ -125,6 +160,9 @@ img {
   	-moz-osx-font-smoothing: grayscale;
 }
 .login {
+    background-image: url("gymimg1.jpg");
+    background-size: cover;
+  background-position: center;
   	width: 400px;
   	background-color: #ffffff;
   	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
@@ -177,4 +215,57 @@ img {
 
 .error {
     color: red;
+}
+
+.about{
+    max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.aboutpage{
+  background-size: cover;
+  color:black;
+}
+#aboutgym{
+ color: black;
+ font-size: 30px;
+ text-decoration: underline;
+}
+#about1{
+  font-size: 20px;
+  font-family: Arial, sans-serif; 
+}
+#about2{
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+#about3{
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#aboutpic{
+  position: relative;
+  bottom: 0;
+  left:50%
+  transform: translateX(-50%);
+  width: 30%;
+  height: 30$; 
+}
+
+#whatwedo{
+  font-size: 25px;
+}
+
+
+#cal{
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 50vh;
+  object-fit: cover;
 }
