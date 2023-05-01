@@ -21,6 +21,7 @@
         addMeal($_POST['item'], $_POST['cal'], $_SESSION['user'], $_SESSION['date']);
         // Return to result if needed for viewing.
         $result = "Successfully saved!";
+<<<<<<< Updated upstream
 
         // Store the submitted data in the session
         $_SESSION['food_data'][] = [
@@ -28,6 +29,8 @@
         'calories' => $_POST['cal'],
         'date' => $_SESSION['date']
         ];
+=======
+>>>>>>> Stashed changes
     }
     // If the user sends a GET request using the previous button...
     if (isset($_GET['previous'])) {
@@ -79,7 +82,35 @@
         <a href="about.php">About Us</a>
         <a href="account.php">My Account</a>
     </div>
+<<<<<<< Updated upstream
 
+=======
+
+   <div class="calcon">
+      <p id = "contactpar">Keep track of your daily calorie intake and achieve your fitness goals with our easy-to-use calorie tracking feature.</p>  
+   <img id = "img19" src="gymimg19.jpg" alt= "Gym image 19">
+</div>
+
+  <style>
+      .calcon {
+        background: #025577;
+        color: #FFF;
+        overflow: hidden;
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+      }
+
+      #img19{
+       width:400px;
+       height: auto;
+       margin-left: 90px;
+     }
+    </style>
+    
+    <br> <br> <br> <br>
+
+>>>>>>> Stashed changes
         <h2>Showing caloric intake for <?php echo $_SESSION['date']; ?></h2>
 
         <!-- This sends the request to the server to reset the users saved date in the calorie logger.  -->
@@ -164,6 +195,7 @@
             <!-- This displays the value of result, which is typically a status or error message. -->
             <p> <?php echo $result; ?></p>
         </form>
+<<<<<<< Updated upstream
 
         <a href="?previous=true">
             <input type="button" name="previous" value="<- Previous">
@@ -173,5 +205,131 @@
         </a>
 
     <h5>© 2023 GymFlow</h5>
+=======
+
+        <a href="?previous=true">
+            <input type="button" name="previous" value="<- Previous">
+        </a>
+        <a href="?next=true">
+            <input type="button" name="next" value="Next ->">
+        </a>
+    </div>
+
+  <style>
+    button[name="reset"] {
+     background-color: #025577;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     font-size: 16px;
+     font-weight: bold;
+  }
+
+  button[name="reset"]:hover {
+    cursor: pointer;
+    background-color: #003f5c;
+  }
+    form {
+      background-color: white;
+      padding: 20px;
+      width:300px;
+      border-radius: 10px;
+      border: 5px solid #025577;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    
+
+    input[type="text"], input[type="submit"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%; 
+      border-radius: 5px;
+      border: 2px solid #025577;
+    }
+
+   input[type="submit"] {
+      background-color: #025577;
+      color: white;
+      font-weight: bold;
+   }
+
+  p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  } 
+    
+     a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    input[type="button"] {
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        color: #025577;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[type="button"]:hover {
+        background-color: #025577;
+        color: white;
+    }
+  </style>
+
+  
+
+   <br> <br> <br>  <br> <br> <br>  <br> <br> <br>
+
+    
+    <div class="contact-info">   
+       <h1 id = "contactinfo"> Contact </h1>
+      <p id ="ct">Our Address: MTSU</p>
+       
+     <p id = "ct">Email: gymflow@gmail.com</p>
+      
+     <p id = "ct">Phone: 615-375-1242</p>
+      <br> <br> <br>
+       <img src = "gymimg18.png" alt = "Gym image 18" width=7% height = 7%>
+       <footer>
+      <h5>© 2023 GymFlow</h5>
+    </footer>
+  </div>
+    
+    <style>
+      .contact-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+        background-color: #454545;
+        background-size:cover;
+        width: 100%;
+        height: 60%;
+      }
+
+      .contact-info p{
+        display: inline-block;
+        text-align:center;
+        margin: 0;
+        padding: 10px;
+      } 
+
+      #contactinfo {
+       margin-right: 20px;
+       font-size: 30px;
+       text-decoration: underline;
+       color:white;
+      }
+    </style>
+
+  
+>>>>>>> Stashed changes
 </body>
 </html>
