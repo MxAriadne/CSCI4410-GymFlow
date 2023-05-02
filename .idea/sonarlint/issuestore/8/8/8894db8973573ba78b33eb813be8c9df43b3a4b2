@@ -1,0 +1,6 @@
+
+^	php:S1808>"=Move this open curly brace to the beginning of the next line.(×´¤Íûÿÿÿÿ8ŸÞÃÑý0
+Y	php:S1808H"=Move this open curly brace to the beginning of the next line.(–Ùÿ·8ŸÞÃÑý0
+hphp:S107%"HThis function has 10 parameters, which is greater than the 7 authorized.(­‡ýÓþÿÿÿÿ8ŸÞÃÑý0
+G	php:S2003	"&Replace "require" with "require_once".(©¢˜Îûÿÿÿÿ8ŸÞÃÑý0
+m	php:S4833	"LReplace "require" with namespace import mechanism through the "use" keyword.(©¢˜Îûÿÿÿÿ8ŸÞÃÑý0

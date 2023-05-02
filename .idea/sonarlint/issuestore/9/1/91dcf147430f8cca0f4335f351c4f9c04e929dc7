@@ -1,0 +1,4 @@
+
+u	php:S1192"TDefine a constant instead of duplicating this literal "location: index.php" 3 times.(ì½¬„ûÿÿÿÿ8™®€Ñý0
+G	php:S2003"&Replace "require" with "require_once".(¹Ùì³üÿÿÿÿ8™®€Ñý0
+m	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(¹Ùì³üÿÿÿÿ8™®€Ñý0

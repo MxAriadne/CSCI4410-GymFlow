@@ -30,9 +30,7 @@
       <change beforePath="$PROJECT_DIR$/replit.nix" beforeDir="false" afterPath="$PROJECT_DIR$/replit.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/schedule.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workout.php" beforeDir="false" afterPath="$PROJECT_DIR$/workout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workoutcustomizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/workoutcustomizer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workoutcustomizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/workoutcustomizer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +127,8 @@
       <workItem from="1682905247077" duration="1126000" />
       <workItem from="1682977484013" duration="212000" />
       <workItem from="1682981745884" duration="5036000" />
-      <workItem from="1682990723578" duration="2392000" />
+      <workItem from="1682990723578" duration="2620000" />
+      <workItem from="1682993966160" duration="1037000" />
     </task>
     <servers />
   </component>

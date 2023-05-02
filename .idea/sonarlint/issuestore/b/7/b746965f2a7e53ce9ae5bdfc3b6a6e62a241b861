@@ -1,0 +1,14 @@
+
+JWeb:AvoidCommentedOutCodeCheckÁ"Remove this commented out code.(ÕæŞÎ
+OWeb:AvoidCommentedOutCodeCheckÙ"Remove this commented out code.(»„Áèùÿÿÿÿ
+b	php:S18086"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬8È¨ÙÑı0
+i	php:S1808"HMove this "elseif" to the same line as the previous closing curly brace.(öÍñ•ÿÿÿÿÿ8É¨ÙÑı0
+i	php:S1808"HMove this "elseif" to the same line as the previous closing curly brace.(ÿãêšûÿÿÿÿ8É¨ÙÑı0
+d	php:S1808"HMove this "elseif" to the same line as the previous closing curly brace.(Şêº8É¨ÙÑı0
+i	php:S1808!"HMove this "elseif" to the same line as the previous closing curly brace.(»¨ÉÍüÿÿÿÿ8É¨ÙÑı0
+d	php:S1808%"HMove this "elseif" to the same line as the previous closing curly brace.(§Òƒ‹8É¨ÙÑı0
+d	php:S1808*"HMove this "elseif" to the same line as the previous closing curly brace.(œÔ›ª8É¨ÙÑı0
+d	php:S1808."HMove this "elseif" to the same line as the previous closing curly brace.(Ô„ûï8É¨ÙÑı0
+d	php:S18082"HMove this "elseif" to the same line as the previous closing curly brace.(·ïÜ¡8É¨ÙÑı0
+B	php:S2003"&Replace "require" with "require_once".(—ôí¿8É¨ÙÑı0
+h	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(—ôí¿8É¨ÙÑı0
