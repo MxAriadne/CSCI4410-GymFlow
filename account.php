@@ -1,5 +1,5 @@
 <?php
-    require 'plugin.php';
+    require 'workout.php';
     if (!isset($_SESSION['user'])) {
         header("location: index.php");
         exit();
@@ -46,8 +46,43 @@
 
 <h1>Hello, <?php echo $_SESSION["user"] ?>.</h1>
 
+<div>
+    <?php
+
+    $data = retrieveUserInfo($_SESSION["user"]);
+    if ($data != null) {
+        echo "Gender: " . $data["gender"] . "<br>";
+        echo "Age: " . $data["age"] . "<br>";
+        echo "Weight: " . $data["weight"] . "<br>";
+        echo "Height: " . $data["height"] . "<br>";
+
+        $heightInMeters = $data['height'] / 100; // Convert height from cm to meters
+        $weightInKg = $data['weight'] * 0.453592; // Convert weight from lbs to kg
+        $bmi = round($weightInKg / pow($heightInMeters, 2), 1);
+
+        echo "BMI: " . $bmi . "<br>";
+        echo "Skill Level: " . $data["exercise_level"] . "<br>";
+        echo "Current Goals: " . $data["goals"] . "<br>";
+    }
+    ?>
+    <br>
+</div>
+
 <button><a href="?logout">Logout</a></button>
 <button><a href="?confirm-account-deletion">Delete account</a></button>
+
+<div>
+    <h3>Here are your recommended exercises:</h3>
+    <?php
+
+    $data = listExercises($_SESSION["user"]);
+     if ($data != null) {
+         foreach ($data as $exercise) {
+             echo $exercise . "<br>";
+         }
+     }
+    ?>
+</div>
 
 </body>
 
