@@ -73,14 +73,19 @@
 
 <div>
     <h3>Here are your recommended exercises:</h3>
-    <?php
 
-    $data = listExercises($_SESSION["user"]);
-     if ($data != null) {
-         foreach ($data as $exercise) {
-             echo $exercise . "<br>";
-         }
-     }
+    <?php
+    if ($_SESSION['routine']) {
+        consoleLog($_SESSION['user']);
+        $data = listExercises($_SESSION["user"]);
+        if ($data != null) {
+            foreach ($data as $exercise) {
+                echo $exercise . "<br>";
+            }
+        }
+    } else {
+        echo "You haven't created any routines!";
+    }
     ?>
 </div>
 

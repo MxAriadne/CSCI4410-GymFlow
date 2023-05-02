@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c636d09-bf31-49ae-9738-59690cf874be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/workout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workoutcustomizer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CSCI4410-GymFlow-Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CSCI4410-GymFlow-Git.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/49a40fcd-5180-4910-bc51-12b06cb03238.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/49a40fcd-5180-4910-bc51-12b06cb03238.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.replit" beforeDir="false" afterPath="$PROJECT_DIR$/.replit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSCI4410-GymFlow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CSCI4410-GymFlow.iml" afterDir="false" />
@@ -22,6 +30,8 @@
       <change beforePath="$PROJECT_DIR$/replit.nix" beforeDir="false" afterPath="$PROJECT_DIR$/replit.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/schedule.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workout.php" beforeDir="false" afterPath="$PROJECT_DIR$/workout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workoutcustomizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/workoutcustomizer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workoutcustomizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/workoutcustomizer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,34 +64,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/php/php.ini-development",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/php/php.ini-development&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redshift",
-      "sqlite",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redshift&quot;,
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
-      "SQLite"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;SQLite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gage1\Documents\GitHub\CSCI4410-GymFlow" />
@@ -118,7 +128,8 @@
       <workItem from="1682816204742" duration="3465000" />
       <workItem from="1682905247077" duration="1126000" />
       <workItem from="1682977484013" duration="212000" />
-      <workItem from="1682981745884" duration="4757000" />
+      <workItem from="1682981745884" duration="5036000" />
+      <workItem from="1682990723578" duration="2392000" />
     </task>
     <servers />
   </component>

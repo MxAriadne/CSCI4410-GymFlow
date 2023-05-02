@@ -1,8 +1,11 @@
 <?php
   require "plugin.php";
-  if (isset($_POST['submit'])) {
-    $response = loginUser($_POST['username'], $_POST['password']);
-  }
+    if (isset($_POST['submit'])) {
+        $response = loginUser($_POST['username'], $_POST['password']);
+    }
+    if (!isset($_SESSION['routine'])) {
+        $_SESSION['routine'] = false;
+    }
 ?>
 
 <!DOCTYPE html>

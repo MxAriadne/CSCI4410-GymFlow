@@ -42,13 +42,18 @@ function saveWorkoutPreferences($user, $gender, $age, $height, $weight, $exercis
         // Convert the exerciseType array to a string with comma-separated values
         $exerciseType = implode(",", $exerciseType);
         $stmt = $mysqli->prepare("UPDATE workout_preferences SET username = ?, gender = ? , age = ?, height = ?, weight = ?, exercise_level = ?, goals = ?, exercise_type = ?, preferred_location = ?, exercise_duration = ? WHERE username = ?");
-        $stmt->bind_param("ssiiissssi", $user, $gender, $age, $height, $weight, $exerciseLevel, $goals, $exerciseType, $preferredLocation, $exerciseDuration, $user);
+        $stmt->bind_param("ssiiissssis", $user, $gender, $age, $height, $weight, $exerciseLevel, $goals, $exerciseType, $preferredLocation, $exerciseDuration, $user);
         $stmt->execute();
         if ($stmt->affected_rows == 0) {
-            consoleLog("An error occurred. Please try again.");
-            return false;
+            $stmt = $mysqli->prepare("INSERT INTO workout_preferences(username, gender, age, height, weight, exercise_level, goals, exercise_type, preferred_location, exercise_duration) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param("ssiiissssi", $user, $gender, $age, $height, $weight, $exerciseLevel, $goals, $exerciseType, $preferredLocation, $exerciseDuration);
+            $stmt->execute();
+            consoleLog("Created");
+            $_SESSION['routine'] = true;
+            return true;
         } else {
-            consoleLog("Successfully added to database.");
+            consoleLog("Updated.");
+            $_SESSION['routine'] = true;
             return true;
         }
     }

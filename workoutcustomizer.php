@@ -2,6 +2,7 @@
 require "workout.php";
 
 $recommendedExercises = [];
+$result = false;
 $bmi = "";
 
 if (!isset($_SESSION['user'])) {
@@ -54,7 +55,6 @@ if (isset($_POST['submit'])) {
         $recommendedExercises = ["TBA"];
     }
 
-    saveExercises($_SESSION['user'], $recommendedExercises);
     $response = saveWorkoutPreferences(
         $_SESSION['user'],
         $_POST['gender'],
@@ -67,6 +67,13 @@ if (isset($_POST['submit'])) {
         $_POST['preferredLocation'],
         $_POST['exerciseDuration']
     );
+    saveExercises($_SESSION['user'], $recommendedExercises);
+    if ($response) {
+        $result = "Routine generated!";
+    } else {
+        $result = "Error, no routine generated.";
+    }
+    $_SESSION['routine'] = true;
 
     // Calculate BMI
     $heightInMeters = $_POST['height'] / 100; // Convert height from cm to meters
