@@ -3,6 +3,8 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link type="text/css" rel="stylesheet" href="gymflow.css" />
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
 </head>
 <body>
 <H1>SCHEDULE </H1>
@@ -25,7 +27,12 @@
 
 </div>
 
-  <img id = "cal" src = "gymimg13.jpg" alt = "Gym image 13">
+<div id="calendar"></div>
+
+<!-- FullCalendar JS and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+<script src="gymflow.js"></script>
 
 
  <br> <br> <br> <br> <br> <br>
@@ -40,7 +47,7 @@
       
      <p id = "ct">Phone: 615-375-1242</p>
       <br> <br> <br>
-      <img src = "gymimg18.png" alt = "Gym image 18" width=7% height = 7%>
+
        <footer>
       <h5>© 2023 GymFlow</h5>
     </footer>

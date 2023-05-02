@@ -23,6 +23,124 @@
 
     <link type="text/css" rel="stylesheet" href="gymflow.css" />
     <title>Account Details - GymFlow</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #5BB5FB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navbar img {
+        height: 50px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .user-info, .recommended-exercises {
+        text-align: center;
+        background-color: #5BB5FB;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #025577;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    button a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    button:hover {
+        background-color: #01384a;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #5BB5FB;
+    }
+
+    .dropbtn {
+        background-color: black;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        padding-bottom: 2px;
+    }
+</style>
 </head>
 
 <body>
@@ -66,12 +184,7 @@
     }
     ?>
     <br>
-</div>
 
-<button><a href="?logout">Logout</a></button>
-<button><a href="?confirm-account-deletion">Delete account</a></button>
-
-<div>
     <h3>Here are your recommended exercises:</h3>
 
     <?php
@@ -87,6 +200,12 @@
         echo "You haven't created any routines!";
     }
     ?>
+</div>
+
+<button><a href="?logout">Logout</a></button>
+<button><a href="?confirm-account-deletion">Delete account</a></button>
+
+<div>
 </div>
 
 </body>

@@ -1,0 +1,4 @@
+
+^	php:S1808"=Move this open curly brace to the beginning of the next line.(ıèËÖıÿÿÿÿ8¼™ôÒı0
+G	php:S2003	"&Replace "require" with "require_once".(©¢˜Îûÿÿÿÿ8¼™ôÒı0
+m	php:S4833	"LReplace "require" with namespace import mechanism through the "use" keyword.(©¢˜Îûÿÿÿÿ8¼™ôÒı0
