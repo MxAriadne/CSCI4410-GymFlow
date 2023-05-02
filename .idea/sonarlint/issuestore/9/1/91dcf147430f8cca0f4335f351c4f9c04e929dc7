@@ -1,4 +1,5 @@
 
-u	php:S1192"TDefine a constant instead of duplicating this literal "location: index.php" 3 times.(ì½¬„ûÿÿÿÿ8™®€Ñý0
-G	php:S2003"&Replace "require" with "require_once".(¹Ùì³üÿÿÿÿ8™®€Ñý0
-m	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(¹Ùì³üÿÿÿÿ8™®€Ñý0
+e	php:S1192]"IDefine a constant instead of duplicating this literal "</p><br>" 7 times.(–»ê½8û¾†×ý0
+u	php:S1192"TDefine a constant instead of duplicating this literal "location: index.php" 3 times.(ì½¬„ûÿÿÿÿ8û¾†×ý0
+B	php:S2003"&Replace "require" with "require_once".(—ôí¿8û¾†×ý0
+h	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(—ôí¿8û¾†×ý0

@@ -37,20 +37,20 @@ p {
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #fff;
-  height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    height: 55px;
 }
 
 .navbar a {
@@ -250,10 +250,10 @@ img {
 #aboutpic{
   position: relative;
   bottom: 0;
-  left:50%
+  left:50%;
   transform: translateX(-50%);
   width: 30%;
-  height: 30$; 
+  height: 30%;
 }
 
 #whatwedo{

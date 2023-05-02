@@ -46,16 +46,16 @@ h5 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 0;
   list-style-type: none;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  height: 50px;
+  height: 55px;
 }
 
 .navbar a {
@@ -189,14 +189,6 @@ img {
 .error {
     color: red;
 }
-
-
-
-
-
-
-
-
 
 /* Add this to your gymflow.css file */
 body {

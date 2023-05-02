@@ -1,13 +1,6 @@
 
-b	php:S1131€"@Remove the useless trailing whitespaces at the end of this line.(¬ğİüøÿÿÿÿ8ç…ôĞı0
-b	php:S1131‰"@Remove the useless trailing whitespaces at the end of this line.(“¿Ü’şÿÿÿÿ8ç…ôĞı0
-b	php:S1131‹"@Remove the useless trailing whitespaces at the end of this line.(˜Óùÿÿÿÿ8ç…ôĞı0
-]	php:S1131”"@Remove the useless trailing whitespaces at the end of this line.(œã’û8ç…ôĞı0
-b	php:S1131£"@Remove the useless trailing whitespaces at the end of this line.(æÀö€øÿÿÿÿ8ç…ôĞı0
-Xphp:S105"EReplace all tab characters in this file by sequences of white-spaces.8ç…ôĞı0
-q	php:S3776¨"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(ß£8ç…ôĞı0
-a	php:S1192"FDefine a constant instead of duplicating this literal "Y/m/d" 5 times.(¸š®8ç…ôĞı0
-P	php:S1066#"/Merge this if statement with the enclosing one.(ñ°éÓùÿÿÿÿ8è…ôĞı0
+q	php:S3776¸"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(ß£8Ò²‡×ı0
+b	php:S1192"FDefine a constant instead of duplicating this literal "Y/m/d" 5 times.(¢µàß8Ó²‡×ı0
+P	php:S1066'"/Merge this if statement with the enclosing one.(·Ë´®úÿÿÿÿ8Ó²‡×ı0
 G	php:S2003"&Replace "require" with "require_once".(Ìÿ¡èùÿÿÿÿ8è…ôĞı0
-Pphp:S121#"0Add curly braces around the nested statement(s).(ñ°éÓùÿÿÿÿ8è…ôĞı0
 m	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(Ìÿ¡èùÿÿÿÿ8è…ôĞı0
